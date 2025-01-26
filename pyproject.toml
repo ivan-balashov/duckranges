@@ -1,0 +1,25 @@
+[project]
+name = "duckranges"
+version = "0.1.0"
+description = "Python package for working with genomic intervals"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Ivan Balashov", email = "fiordmaster@gmail.com"},
+]
+dependencies = [
+    "polars >=0.20.0",
+    "pyarrow >=12.0.0",
+    "duckdb >=0.9.0",
+    "pathlib >=1.0.1; python_version < '3.9'",
+]
+
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/ivan-balashov/duckranges"
+Documentation = "https://github.com/ivan-balashov/duckranges"
+Repository = "https://github.com/ivan-balashov/duckranges"
